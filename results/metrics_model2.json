@@ -1,0 +1,20 @@
+{
+  "experiment": "cross-model",
+  "victim_model": "qwen/qwen-2.5-7b-instruct",
+  "firewall_model": "anthropic/claude-opus-4-5",
+  "n_scenarios": 50,
+  "attack_success_rate": 0.30,
+  "attack_success_count": 15,
+  "firewall_block_rate": 0.70,
+  "firewall_block_count": 35,
+  "firewall_allow_count": 15,
+  "false_negative_rate": 0.30,
+  "wilson_ci_lower": 0.191,
+  "wilson_ci_upper": 0.438,
+  "comparison": {
+    "llama_attack_rate": 0.34,
+    "qwen_attack_rate": 0.30,
+    "wilson_ci_overlap": true,
+    "model_agnostic": true
+  }
+}
